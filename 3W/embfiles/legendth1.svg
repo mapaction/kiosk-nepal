@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Author: MapAction/Creator: MappetizerCore 12.0.3 by uismedia (http://www.uismedia.de);21/05/2015 17:23:31-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:mvns="http://www.mappetizer.de" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="112">
+  <style type="text/css"><![CDATA[
+.normal { font-family:Arial,Helvetica,sans-serif;font-size:8pt;pointer-events:none }
+.th1leg1LEG { fill:#ccccff;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
+.th1leg2LEG { fill:#ada0fa;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
+.th1leg3LEG { fill:#8d76f5;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
+.th1leg4LEG { fill:#6f51f0;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
+.th1leg5LEG { fill:#472ee8;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
+.th1leg6LEG { fill:#0000e0;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
+]]></style>
+  <g id="legth1">
+    <text x="2" y="10" class="normal">Total No. Activities</text>
+    <rect x="2" y="17" width="24" height="12" class="th1leg1LEG" />
+    <text x="36" y="26" class="normal">1 - 5</text>
+    <rect x="2" y="33" width="24" height="12" class="th1leg2LEG" />
+    <text x="36" y="42" class="normal">6 - 10</text>
+    <rect x="2" y="49" width="24" height="12" class="th1leg3LEG" />
+    <text x="36" y="58" class="normal">11 - 15</text>
+    <rect x="2" y="65" width="24" height="12" class="th1leg4LEG" />
+    <text x="36" y="74" class="normal">16 - 20</text>
+    <rect x="2" y="81" width="24" height="12" class="th1leg5LEG" />
+    <text x="36" y="90" class="normal">21 - 25</text>
+    <rect x="2" y="97" width="24" height="12" class="th1leg6LEG" />
+    <text x="36" y="106" class="normal">&gt;25</text>
+  </g>
+</svg>

@@ -1,0 +1,429 @@
+*:focus {
+  outline: none;
+}
+html, body, #MVpreloader {
+  /* do not delete */
+  width:100%; height:100%;
+  margin:0; padding:0;
+}
+@media screen and (max-width: 640px), screen and (max-device-width: 640px) {
+  body {
+    font-size:85%;
+  }
+}
+@media screen and (min-width: 640px), screen and (min-device-width: 640px) {
+  body {
+    font-size:75%;
+  }
+}
+body {
+  background-color:white;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:normal;
+  color:#000000
+}
+#MVpreloader {
+  background:white
+  url('../pictures/spinning-loader.gif')
+  no-repeat center center;
+  position:absolute;
+  z-index:999;
+}
+h1 { font-size:2rem;font-weight:bold;margin-top:0px;margin:7px }
+h1.subtext { font-size:1.2rem;margin-top:0px;margin:7px }
+h1.print { margin-left:30px }
+h2 { font-size:1.2rem;font-weight:bold }
+h3 { font-weight:bold;margin-bottom:7px }
+a { color:blue;text-decoration:none }
+a:hover { color:gray }
+.formElem { background-color:white }
+p.siteinfo,li.siteinfo {
+  font-size:0.8rem;line-height:11px;margin-top:0px;margin-bottom:7px
+}
+.floatText {
+  float: left;
+}
+.titleText {
+  display: table-cell;
+  width: 100%;
+  height: 70px;
+  text-align: left;
+  vertical-align: middle;
+}
+#MVmassstab {
+  white-space: nowrap;
+  outline: none;
+  width:150px;
+}
+.MVtbButton { margin:0px }
+.MVtbButton:hover { background-color:#D3D3D3 }
+.MVtbButton2 { border: 1px solid darkgrey}
+.MVtbButtonMob { margin:0px; background-color:#F7F6F6;}
+.MVtbButtonMob:active { background-color:#D3D3D3 }
+.MVtoolbarSeparator { margin-left:10px}
+#MVborderContainer {
+  width: 100%;
+  height: 100%;
+  padding: 3px 0 0 0;
+}
+#MVtitle {
+  background-color:white;
+  color:#000;
+  padding:0 !important;
+  margin:0 3px 0 3px;
+  overflow:hidden;
+}
+#MVtoolbar {
+  background-color:#F7F6F6;
+  padding: 0;
+  margin:0 3px 3px 0;
+  overflow: hidden;
+}
+/* IE10 Hack for MVtoolbar.fullscreen*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+#MVtoolbar\.fullscreen {visibility: hidden;}
+}
+#MVmainSite {
+  background-color:white;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+#MVtabContainer {
+  width:24%;
+  margin-left:3px;
+  margin-bottom:3px;
+}
+#MVtbSmartphone {
+  position:absolute;
+  margin:10px;
+  padding:4px;
+  background-color:lightgrey;
+  }
+.MVident {
+  min-width:365px;
+}
+.MVmap { padding:0 !important;border:0px solid #F7F6F6 }
+#MVoverviewFrame { position:absolute;margin:4px;z-index:2;background-color:#fff; }
+.tundra #MVoverviewFrame .dijitTitlePaneContentInner {
+  padding:2px 2px 0 2px;
+}
+.tundra .MVselect .dijitInputField { padding:3px 0px 3px 2px !important}
+.tundra .MVselLabelLong .dijitSelectLabel { width:340px;text-align:left;height:1.2em;overflow:hidden}
+.tundra .MVselLabel .dijitSelectLabel { width:290px;text-align:left;height:1.2em;overflow:hidden}
+.tundra .dijitTabContainerTopStrip {
+  background: white;
+  border:1px solid white;
+  border-bottom:0;
+}
+.tundra .dijitSplitContainer-dijitContentPane, .tundra .dijitBorderContainer-dijitContentPane, .tundra .dijitBorderContainer, .tundra .dijitSplitterV, .tundra .dijitGutterV, .tundra .dijitSplitContainer-child, .tundra .dijitBorderContainer-child {
+  background:none;
+  padding:0;
+}
+.tundra .MVtbButton .dijitButtonNode, .tundra .MVtbButtonMob .dijitButtonNode{
+  border: 0px;
+  background:none;
+  box-shadow:none;
+  padding:3px;
+}
+.tundra .dijitMapViewIcon,.tundra .MVSmartIcon {
+  background: url("../pictures/toolbar.png") no-repeat scroll 0 center;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  margin: 3px;
+}
+.tundra .MVSmartIcon{
+  margin: 5px;
+}
+.tundra .dijitMapViewIconZoomIn { background-position: 0px; }
+.tundra .dijitMapViewIconZoomOut { background-position: -18px; }
+.tundra .dijitMapViewIconPan { background-position: -36px; }
+.tundra .dijitMapViewIconFullExtent { background-position: -54px; }
+.tundra .dijitMapViewIconExtentPrevious { background-position: -72px; }
+.tundra .dijitMapViewIconExtentNext { background-position: -90px; }
+.tundra .dijitMapViewIconIdentify { background-position: -108px; }
+.tundra .dijitMapViewIconKoord { background-position: -126px; }
+.tundra .dijitMapViewIconMeasure { background-position: -144px; }
+.tundra .dijitMapViewIconSiteInfo { background-position: -162px; }
+.tundra .dijitMapViewIconPrint { background-position: -180px; }
+.tundra .dijitMapViewIconHelp { background-position: -198px; }
+.tundra .dijitMapViewIconEdit { background-position: -216px; }
+.tundra .dijitMapViewIconZoomOutGrey { background-position: -234px; }
+.tundra .dijitMapViewIconLine { background-position: -252px; }
+.tundra .dijitMapViewIconArea { background-position: -270px; }
+.tundra .dijitMapViewIconSum { background-position: -288px; }
+.tundra .dijitMapViewIconClear { background-position: -306px; }
+.tundra .dijitMapViewIconWeather { background-position: -342px; }
+.tundra .dijitMapViewIconLegend { background-position: -360px; }
+.tundra .dijitMapViewIconSunlight { background-position: -378px; }
+.tundra .dijitMapViewIconCamera { background-position: -396px; }
+.tundra .dijitMapViewIconZoomTo { background-position: -414px; }
+.tundra .dijitMapViewIconHighlight { background-position: -432px; }
+.tundra .dijitMapViewIconAnimStop { background-position: -450px; }
+.tundra .dijitMapViewIconAnimPlay { background-position: -468px; }
+.tundra .dijitMapViewIconTable { background-position: -486px; }
+.tundra .dijitMapViewIconProperties { background-position: -504px; }
+.tundra .dijitMapViewIconVertexAdd { background-position: -522px; }
+.tundra .dijitMapViewIconVertexDelete { background-position: -540px; }
+.tundra .dijitMapViewIconSave { background-position: -558px; }
+.tundra .dijitMapViewIconFullScreen { background-position: -576px; }
+.tundra .dijitMapViewIconExport { background-position: -666px; }
+.tundra .dijitMapViewIconLocation { background-position: -684px; }
+.tundra .dijitMapViewIconDistanceLocationToPOI { background-position: -702px; }
+.tundra .dijitMapViewIconRouteLocationToPOI  { background-position: -720px; }
+.tundra .dijitMapViewIconOverview  { background-position: -738px; }
+.tundra .dijitMapViewIconQuery {
+  background: url("../pictures/search.png") no-repeat scroll 0 center;
+}
+#MVqueryFP .dojoxFloatingPaneCanvas {
+  max-width:100% !important;
+  max-height:100% !important;
+}
+.tundra .dijitCheckBox,
+.tundra .dijitCheckBoxIcon {
+  background-image: url('../pictures/checkmark.png'); /* checkbox sprite image */
+  }
+.tundra .dijitTextBox #MVshowKoord { width:180px;text-align: center;padding:3px; }
+.tundra .dijitTabContainerTop-dijitContentPane, .tundra .dijitAccordionContainer-dijitContentPane {
+  padding-top:20px;
+  padding-left:10px;
+  padding-right:10px;
+  background-color:#F7F6F6;
+}
+.tundra .dijitBorderContainer-dijitContentPane {
+  background-color:white;
+  border:0px;
+}
+.tundra .dijitTab {
+  background:lightgrey none;
+  color:#7A7A7A;
+  border:0;
+  margin-top:0px;
+  padding-top:10px !important;
+  padding-bottom:10px !important;
+}
+.tundra .dijitTab:hover {
+  background-color:lightgrey;
+  color:black;
+  border:0;
+  margin-top:0px;
+  padding-top:10px !important;
+  padding-bottom:10px !important;
+}
+.tundra .dijitTabChecked, .tundra .dijitTabChecked:hover {
+  background-color:#F7F6F6 !important;
+  color:black;
+  border:0;
+  margin-top:0px;
+  padding-top:10px !important;
+  padding-bottom:10px !important;
+}
+.tundra .dijitTabContainerTop-tabs {
+  padding:0;
+  border:0;
+}
+.tundra .dijitTabContainerTop-spacer {
+  height: 0;
+  border:0;
+}
+.tundra .dijitTabPaneWrapper {
+  border:0;
+}
+.tundra .dijitTitlePaneContentOuter {
+  background:none;
+  border:1px solid lightgrey;
+  overflow:auto;
+}
+.tundra .dijitTitlePaneTitle, .tundra .dojoxFloatingPaneTitle, .tundra .dijitDialogTitleBar {
+  color:#7A7A7A;
+  background:lightgrey none;
+  border:1px solid lightgrey;
+  margin-top:1px;
+}
+.tundra .dijitDialogCloseIcon {
+  margin-top:6px;
+}
+#MVzoomObjects * .dijitTitlePaneTitle  {
+  color:black;
+  background:#E8E8E8 none;
+  border-style:solid solid none solid;
+}
+.tundra .dojoxFloatingPane {
+  padding: 3px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow:5px 5px 20px #666;
+  background-color:#F7F6F6;
+}
+.tundra .dijitDialog {
+  padding: 3px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow:5px 5px 20px #666;
+  background-color:#F7F6F6;
+}
+.tundra .dojoxFloatingPaneCanvas {
+  width:100% !important;
+  height:100% !important;
+  max-width:350px !important;
+  max-height:550px !important;
+  overflow:auto;
+  background-color:#F7F6F6;
+}
+.tundra .dojoxFloatingPaneContent {
+  background-color:#F7F6F6;
+  overflow:visible;
+}
+.MVlegendButton { margin:0 !important; }
+.tundra .MVlegendButton .dijitButtonNode {
+  padding: 0.0em;
+}
+.tundra .MVlegendButton .dijitMapViewIcon {
+  margin:0.15em;
+}
+.MVlegC {
+  position:relative;
+  margin-bottom:0;
+}
+.MVcheck {
+  position:absolute;
+  top:10px;
+  left:0px;
+}
+.MVleg {
+  position:relative;
+  margin-left:25px;
+  overflow:visible;
+}
+.tundra .MVleg .dijitTitlePaneTitle  {
+  color:black;
+  background:none;
+  border:0;
+  padding-bottom:8px;
+  padding-top:8px;
+  margin-right:40px;
+  text-indent:-8px;
+  margin-left:8px;
+}
+.tundra .MVleg .dijitTitlePaneContentOuter {
+  background:none;
+  margin-left:14px;
+  border:0;
+  overflow:visible;
+}
+.tundra .MVleg .dijitTitlePaneContentInner {
+  background:none;
+  padding:0;
+}
+table.identify { border-collapse:collapse;border:gray 1px solid;min-width:280px;width:100%;background-color:white; }
+h1.identify { font-weight:bold;margin-top:20px }
+td.identify,p.identify,a.identify,a.identify:hover { font-size:0.8rem }
+th.identify,td.identify,td.identifyPic {  border:silver 1px dotted;padding:3px }
+th.identifyNoBorder,td.identifyNoBorder,td.identifyPicNoBorder {
+  border:0 none;
+}
+th.identify { font-weight:bold;text-align:left;vertical-align:bottom;white-space:nowrap;background-color:lightgrey }
+td.identifyPic { text-align:center }
+td.identify { vertical-align:top }
+table.identify .imgClose { padding-bottom:3px;padding-right:3px }
+table.identify .imgTable {width: auto; max-width:240px}
+.tundra .tableFP .dojoxFloatingPaneCanvas {
+  max-width:800px !important;
+  max-height:550px !important;
+}
+.tundra .tableFP .dojoxFloatingPaneTitle {
+  margin-bottom:5px;
+}
+#MVtableContent { margin: 0 5px 5px 5px; }
+.recCloseBtn {margin-left: 10px; display: none;}
+table.recTable { border:gray 2px solid;border-collapse:collapse;empty-cells:show;width:100% }
+.recTable td { padding:3px; border:1px solid gray;vertical-align:top }
+th, td.recTable { font-weight:bold;text-align:left;vertical-align:top;background-color:lightgrey;border:none;border-left:gray 1px solid;padding:3px }
+table.recTable .imgTable {width: auto; height: auto; max-height:70px}
+table.recTable .imgTableTop { border:none }
+table.recTable .imgAsc { margin-top:4px;margin-left:0px;margin-right:5px;border:1px solid gray;width:16px;height:16px}
+.recTableBGAlter { background-color:white }
+.tundra .MVqInput { width:100%; height:1.5em; padding-top:2px padding-bottom:2px;}
+#MVrectableContent {
+  margin: 0 25px 5px 5px;
+}
+table.query  {
+  border:gray 2px solid;
+  padding:6px;
+  margin-top:10px;
+  border-spacing:5px;
+}
+td.query { padding:0px;border:none }
+.query0 .dijitButtonNode { width:2.6em }
+tr.query { vertical-align:top }
+select.query { width:100%; min-width:130px; font-size:1em; }
+/* media query magic */
+body:after {
+  content:'screen';
+  display:none;
+}
+@media screen and (min-width: 1200px) {
+  body:after {
+    content:'screen';
+    display: none;
+  }
+  #MVtbSmallScreen,#MVtbSmartphone{
+    display:none;
+  }
+}
+@media screen and (max-width:1200px){
+  body:after {
+    content:'smallscreen';
+    display:none;
+  }
+  #MVtabContainer, #MVtabContainer_splitter, #MVborderTabContainer, #MVborderTabContainer_splitter, #MVtitle, #MVtbSmartphone {
+    display:none;
+  }
+  #MVtbSmallScreen{
+    display:inline;
+  }
+  #MVlegendFP{min-width:280px;}
+  .tundra .MVselLabel .dijitSelectLabel {max-width:150px;}
+  .tundra .MVselLabelLong .dijitSelectLabel {max-width:150px;}
+}
+@media screen and (max-width: 640px), screen and (max-device-width: 640px){
+  body:after {
+    content:'smartphone';
+    display: none;
+  }
+  #MVtabContainer_splitter,#MVborderTabContainer_splitter, #MVtitle ,#MVtoolbar,#MVmainSite,#MVoverviewFrame,#MVmeasure,#MVkoord,#MVmassstabContainer {
+    display:none;
+  }
+  #MVtbSmartphone, #MVtabContainer, #MVborderTabContainer{
+    display:inline;
+  }
+  #MVoverviewFrame {
+    top:50px;
+  }
+  #MVtabContainer, #MVborderTabContainer {
+    width:100%;
+    height:100%;
+  }
+  .MVmap {
+    width:100% !important;
+    height:100% !important;
+  }
+  .tundra .dijitTabContainerTopStrip {
+    background:#F7F6F6;
+    border:1px solid #F7F6F6;
+  }
+  .tundra .MVselLabel .dijitSelectLabel {max-width:200px;}
+  .tundra .MVselLabelLong .dijitSelectLabel {max-width:200px;}
+  .tundra .dojoxFloatingPaneCanvas {
+    max-width:none !important;
+    max-height:none !important;
+  }
+  .tundra .tableFP .dojoxFloatingPaneCanvas {
+    max-width:none !important;
+    max-height:none !important;
+  }
+  #MVtableContent {
+    margin: 0 5px 20px 5px;
+  }
+  .recCloseBtn {display: inline;}
+}
