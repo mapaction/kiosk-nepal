@@ -1,12 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!--Author: MapAction/Creator: MappetizerCore 12.0.3 by uismedia (http://www.uismedia.de);21/05/2015 20:09:59-->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:mvns="http://www.mappetizer.de" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="17">
+<!--Author: MapAction/Creator: MappetizerCore 12.0.3 by uismedia (http://www.uismedia.de);23/05/2015 18:32:57-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:mvns="http://www.mappetizer.de" xmlns:xlink="http://www.w3.org/1999/xlink" width="253" height="49">
   <style type="text/css"><![CDATA[
 .normal { font-family:Arial,Helvetica,sans-serif;font-size:8pt;pointer-events:none }
-.th2leg0LEG { fill:none;stroke-width:1;stroke:black;shape-rendering:optimizeSpeed }
+.th2leg0LEG { fill:#cccccc;stroke-width:1;stroke:black;stroke-linejoin:round;shape-rendering:optimizeSpeed }
+.th2leg1LEG { fill:none;stroke-width:3.4;stroke:#fa3411;stroke-linejoin:round;shape-rendering:optimizeSpeed }
+.th2leg2LEG { fill:none;stroke-width:3.4;stroke:#4e4e4e;stroke-linejoin:round;shape-rendering:optimizeSpeed }
 ]]></style>
   <g id="legth2">
     <rect x="2" y="1" width="24" height="12" class="th2leg0LEG" />
-    <text x="36" y="10" class="normal">No Activities</text>
+    <text x="36" y="10" class="normal">Less affected districts</text>
+    <rect x="2" y="17" width="24" height="12" class="th2leg1LEG" />
+    <text x="36" y="26" class="normal">Priority affected districts</text>
+    <rect x="2" y="33" width="24" height="12" class="th2leg2LEG" />
+    <text x="36" y="42" class="normal">Additional affected districts - added 10 May</text>
   </g>
 </svg>

@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!--Author: MapAction/Creator: MappetizerCore 12.0.3 by uismedia (http://www.uismedia.de);21/05/2015 20:09:59-->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:mvns="http://www.mappetizer.de" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="112">
+<!--Author: MapAction/Creator: MappetizerCore 12.0.3 by uismedia (http://www.uismedia.de);23/05/2015 18:32:57-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:mvns="http://www.mappetizer.de" xmlns:xlink="http://www.w3.org/1999/xlink" width="161" height="112">
   <style type="text/css"><![CDATA[
 .normal { font-family:Arial,Helvetica,sans-serif;font-size:8pt;pointer-events:none }
-.th1leg1LEG { fill:#ccccff;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
-.th1leg2LEG { fill:#ada0fa;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
-.th1leg3LEG { fill:#8d76f5;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
-.th1leg4LEG { fill:#6f51f0;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
-.th1leg5LEG { fill:#472ee8;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
-.th1leg6LEG { fill:#0000e0;stroke-width:1;stroke:#6e6e6e;shape-rendering:optimizeSpeed }
+.th1leg1LEG { fill:#ccccff;stroke-width:1;stroke:#343434;shape-rendering:optimizeSpeed }
+.th1leg2LEG { fill:#ada0fa;stroke-width:1;stroke:#343434;shape-rendering:optimizeSpeed }
+.th1leg3LEG { fill:#8d76f5;stroke-width:1;stroke:#343434;shape-rendering:optimizeSpeed }
+.th1leg4LEG { fill:#6f51f0;stroke-width:1;stroke:#343434;shape-rendering:optimizeSpeed }
+.th1leg5LEG { fill:#472ee8;stroke-width:1;stroke:#343434;shape-rendering:optimizeSpeed }
+.th1leg6LEG { fill:#0000e0;stroke-width:1;stroke:#343434;shape-rendering:optimizeSpeed }
 ]]></style>
   <g id="legth1">
     <text x="2" y="10" class="normal">Total No. Activities</text>
     <rect x="2" y="17" width="24" height="12" class="th1leg1LEG" />
-    <text x="36" y="26" class="normal">1 - 5</text>
+    <text x="36" y="26" class="normal">1.000000 - 5.000000</text>
     <rect x="2" y="33" width="24" height="12" class="th1leg2LEG" />
-    <text x="36" y="42" class="normal">6 - 10</text>
+    <text x="36" y="42" class="normal">5.000001 - 10.000000</text>
     <rect x="2" y="49" width="24" height="12" class="th1leg3LEG" />
-    <text x="36" y="58" class="normal">11 - 15</text>
+    <text x="36" y="58" class="normal">10.000001 - 15.000000</text>
     <rect x="2" y="65" width="24" height="12" class="th1leg4LEG" />
-    <text x="36" y="74" class="normal">16 - 20</text>
+    <text x="36" y="74" class="normal">15.000001 - 20.000000</text>
     <rect x="2" y="81" width="24" height="12" class="th1leg5LEG" />
-    <text x="36" y="90" class="normal">21 - 25</text>
+    <text x="36" y="90" class="normal">20.000001 - 25.000000</text>
     <rect x="2" y="97" width="24" height="12" class="th1leg6LEG" />
-    <text x="36" y="106" class="normal">&gt;25</text>
+    <text x="36" y="106" class="normal">25.000001 - 100.000000</text>
   </g>
 </svg>

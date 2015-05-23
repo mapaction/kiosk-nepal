@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="MapAction">
 <meta name="generator" content="Mappetizer for ArcGIS 12.0.3 by uismedia (http://www.uismedia.de)">
-<meta name="date" content="21/05/2015 20:11:47">
+<meta name="date" content="23/05/2015 18:34:03">
 <meta name="description" content="This is a Web Mapping solution created with Mappetizer for ArcGIS. ">
 <meta name="keywords" content="Mappetizer, uismedia, SVG, ArcGIS">
 <title>Main map</title>
@@ -35,7 +35,7 @@ var GB_ROOT_DIR = "greybox/";
 <body id="MVhtmlBody" class="tundra" style="margin:0px;visibility:visible">
 <div id="MVpreloader"></div>
 <div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th1Store" data-dojo-props="url:'./embfiles/th1_json.js'"></div>
-<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th4Store" data-dojo-props="url:'./embfiles/th4_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th2Store" data-dojo-props="url:'./embfiles/th2_json.js'"></div>
 
 <!-- Design -->
 <div id="MVborderContainer" data-dojo-type="dijit.layout.BorderContainer" data-dojo-props="design:'headline', gutters:false">
@@ -101,7 +101,7 @@ Scale 1:&nbsp;&nbsp;
 <!-- <![ENDIF]-->
 <span class="MVtoolbarSeparator"></span>
 <select class="MVselect MVselToolbar" data-dojo-type="dijit.form.FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'VDC_NAME', searchAttr: 'name', store: th1Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f3','th1',true,true,false,true); }"></select>
-<select class="MVselect MVselToolbar" data-dojo-type="dijit.form.FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'DISTRICT', searchAttr: 'name', store: th4Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th4',true,true,false,false); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit.form.FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'DISTRICT', searchAttr: 'name', store: th2Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f1','th2',true,true,false,false); }"></select>
 </div>
 <div id="MVmap" class="MVmap" data-dojo-type="dijit.layout.ContentPane"  data-dojo-props="region:'center'">
 <div id="MVoverviewFrame" data-dojo-type="dijit.TitlePane" data-dojo-props="title:'Overview',open:true">
@@ -138,23 +138,25 @@ Scale 1:&nbsp;&nbsp;
 
 </div>
 </div>
-<div id="MVth2Legend" class="MVlegC">
-<input type="checkbox" id="th2Check" class="MVcheck" data-dojo-type="dijit.form.CheckBox" data-dojo-props="checked:true, onChange:function(){ mv_changeLayerVis(this); }" />
-<div class="MVleg" data-dojo-type="dijit.TitlePane" data-dojo-props="title:'Other VDCs'">
-<div id="th2Legend" >
-</div>
-</div>
-</div>
 <div id="MVth3Legend" class="MVlegC">
 <input type="checkbox" id="th3Check" class="MVcheck" data-dojo-type="dijit.form.CheckBox" data-dojo-props="checked:true, onChange:function(){ mv_changeLayerVis(this); }" />
-<div class="MVleg" data-dojo-type="dijit.TitlePane" data-dojo-props="title:'Districts Affected'">
+<div class="MVleg" data-dojo-type="dijit.TitlePane" data-dojo-props="title:'VDCs without Activities'">
 <div id="th3Legend" >
 </div>
 </div>
-<div style="position:absolute;top:5px;right:0px">
-<div class="MVlegendButton" data-dojo-type="dijit.form.Button" data-dojo-props="onClick:function(){mv_layerInfo(this,'th3');},iconClass:'dijitMapViewIcon dijitMapViewIconHelp',showLabel:false">Object-Information</div>
-<div class="MVlegendButton" data-dojo-type="dijit.form.Button" data-dojo-props="onClick:function(){mv_showTable('th3');},iconClass:'dijitMapViewIcon dijitMapViewIconTable',showLabel:false">Attribute Table</div>
-
+</div>
+<div id="MVth4Legend" class="MVlegC">
+<input type="checkbox" id="th4Check" class="MVcheck" data-dojo-type="dijit.form.CheckBox" data-dojo-props="checked:true, onChange:function(){ mv_changeLayerVis(this); }" />
+<div class="MVleg" data-dojo-type="dijit.TitlePane" data-dojo-props="title:'Districts not affected'">
+<div id="th4Legend" >
+</div>
+</div>
+</div>
+<div id="MVth2Legend" class="MVlegC">
+<input type="checkbox" id="th2Check" class="MVcheck" data-dojo-type="dijit.form.CheckBox" data-dojo-props="checked:true, onChange:function(){ mv_changeLayerVis(this); }" />
+<div class="MVleg" data-dojo-type="dijit.TitlePane" data-dojo-props="title:'Districts Affected'">
+<div id="th2Legend" >
+</div>
 </div>
 </div>
 </div>
