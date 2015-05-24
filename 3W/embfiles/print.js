@@ -1,17 +1,15 @@
-﻿// Author: MapAction/Creator: MappetizerCore 12.0.3 by uismedia (http://www.uismedia.de); 23/05/2015 18:35:57
+﻿// Author: MapAction/Creator: MappetizerCore 12.0.3 by uismedia (http://www.uismedia.de); 21/05/2015 20:13:56
 var mv_Query = null;
 dojo.require("dijit.TitlePane");
 dojo.addOnLoad(function() {
   //Do not delete or change this function
   var leg;
-  leg = mv_imgSVGNode(dojo.doc,"MVlegendth1Doc","161px","113px","embfiles/legendth1.svg");
+  leg = mv_imgSVGNode(dojo.doc,"MVlegendth1Doc","96px","113px","embfiles/legendth1.svg");
   dojo.byId("th1Legend").appendChild(leg);
-  leg = mv_imgSVGNode(dojo.doc,"MVlegendth2Doc","253px","50px","embfiles/legendth2.svg");
+  leg = mv_imgSVGNode(dojo.doc,"MVlegendth2Doc","102px","18px","embfiles/legendth2.svg");
   dojo.byId("th2Legend").appendChild(leg);
-  leg = mv_imgSVGNode(dojo.doc,"MVlegendth3Doc","102px","18px","embfiles/legendth3.svg");
+  leg = mv_imgSVGNode(dojo.doc,"MVlegendth3Doc","253px","50px","embfiles/legendth3.svg");
   dojo.byId("th3Legend").appendChild(leg);
-  leg = mv_imgSVGNode(dojo.doc,"MVlegendth4Doc","36px","18px","embfiles/legendth4.svg");
-  dojo.byId("th4Legend").appendChild(leg);
 
   if (dojo.byId("MVoverview") != null) {
     var over = mv_embedSVGNode(dojo.doc,"MVoverviewDoc","150px","75px","embfiles/overview.svg");
@@ -58,22 +56,22 @@ function mv_MapSettings() {
   var l = new MV.Layer("th0",{TxtIds:"txt0"});
 
   //VDCs with Activity
-  var l = new MV.Layer("th1",{Layertype:"TileLayer",TxtIds:"txt0"});
+  var l = new MV.Layer("th1",{Layertype:"TileLayer"});
 
   new MV.SVGTileRules({X:0,Y:0,Width:9994.516,Height:5031.484,XTilesNum:7,YTilesNum:4,Ext:"svg"},"th1",1427.788,3);
 
+  //Other VDCs
+  var l = new MV.Layer("th2",{Layertype:"TileLayer",TxtIds:"txt0"});
+
+  new MV.SVGTileRules({X:0,Y:0,Width:9994.516,Height:5031.484,XTilesNum:4,YTilesNum:3,Ext:"svg"},"th2",2498.629,2);
+
   //Districts Affected
-  var l = new MV.Layer("th2");
+  var l = new MV.Layer("th3",{TxtIds:"txt0"});
 
-  //VDCs without Activities
-  var l = new MV.Layer("th3",{Layertype:"TileLayer",TxtIds:"txt0"});
+  //Districts Affected selection
+  var l = new MV.Layer("th4",{InLegend:false});
 
-  new MV.SVGTileRules({X:3893.754,Y:2250.778,Width:2141.762,Height:1985.351,XTilesNum:3,YTilesNum:3,Ext:"svg"},"th3",713.921,2);
-
-  //Districts not affected
-  var l = new MV.Layer("th4");
-
-  mv_Map.userSettings(98260.849,37370.026,5.84484951239436,1227.36385945112,3,true,377284635,"");
+  mv_Map.userSettings(98260.849,37370.026,5.16795709529406,1227.36385945112,3,true,377284635,"");
   mv_Map.Scalebar = false;
 }
 
