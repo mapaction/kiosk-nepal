@@ -1,0 +1,12 @@
+table.identify { border-collapse:collapse;border:gray 1px solid;width:300px }
+h1.identify { font-weight:bold;margin-top:20px }
+td.identify,p.identify,a.identify,a.identify:hover,td.gpx,p.gpx,a.gpx,a.gpx:hover {
+  margin:0px
+}
+th.identify,td.identify,td.identifyPic {
+  border:gray 1px dotted;padding:3px;
+}
+th.identify { font-weight:bold;text-align:left;vertical-align:bottom;white-space:nowrap;background-color:lightgrey }
+td.identifyPic { text-align:center }
+td.identify { vertical-align:top }
+table.identify .imgTable {width: auto; height: auto; max-width:240px}
