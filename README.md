@@ -7,7 +7,7 @@ The rest of this document explains how members of MapAction can update the conte
 
 One off tasks
 -------------
-A) Sign up for a Github account.
+A) Sign up for a Github account. You may need to verify your email by clicking on a link sent to you from GitHub at some point.
 
 B) Send your account name to Andy Smith so that you can be added to the
 relevant user group on Github (ie "Contributers")
