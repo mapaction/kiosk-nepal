@@ -28,7 +28,7 @@ I have found that GitHub for Windows didn't cope well with the large number of
 files. Using the commandline was at least 100x faster.
 Notes about command syntax below;
 - Any direct quotes from the Git Command windows are quoted with three back
-ticks (```)
+ticks (```) -- though these will not show on Github, but show the commands as fixed-width font text.
 
 
 Steps for each update
@@ -47,31 +47,36 @@ Your branch is up-to-date with 'origin/gh-pages'.
 nothing to commit, working directory clean
 ```
 
-3) Copy the full set of files from the CMF into the 3W folder in github clone.
-You'll need to substute the name of the directory where Mappitizer saved its
-output. The general robocopy syntax is robocopy sourcepath destinationpath /mir
+3) You may want to force an update at this point -- doing so will overwrite any changes in your local copy, but this should be fine if you have not yet copied the files from the CMF (or even if you just want to get back to the 'correct' state as it is on Github). If you want to do it the 'nice' way, omit `--force` and any changes will be merged instead of wiped.
+```
+git pull --force origin gh-pages
+```
+
+4) Copy the full set of files from the CMF into the 3W folder in github clone.
+You'll need to substitute the name of the directory where Mappitizer saved its
+output. The general robocopy syntax is `robocopy sourcepath destinationpath /mir`
 The "/mir" switch means mirror and hence will delete old unused files as well
 as copying new files.
 ```
 robocopy Z:\whereever\the\output\files\are\saved 3W /mir
 ```
 
-4) Using Windows Explorer to check that this has copied as expected, eg that
+5) Using Windows Explorer to check that this has copied as expected, eg that
 you've not accidentally created a extra nested 3W folder. The path to
 index.html should be "kiosk-nepal/3W/index.html"
 
-5) Tell Git to track *all* of the new files in the 3W folder
+6) Tell Git to track *all* of the new files in the 3W folder
 ```
-git add 3W/*
-```
-
-5) Commit the changes (eg tell Git that these all of the file changes are all
-part of the same update.
-```
-git commit -a -m "next attempt to update 3W mapping"
+git add -A
 ```
 
-6) Double check that everything committed correctly using "git status". You
+7) Commit the changes (eg tell Git that these all of the file changes are all
+part of the same update)
+```
+git commit -m "next attempt to update 3W mapping"
+```
+
+8) Double check that everything committed correctly using "git status". You
 should get the message below:
 ```
 mapaction@MA-LAPTOP98 /d/MapAction/github/kiosk-nepal (gh-pages)
@@ -83,12 +88,17 @@ Your branch is ahead of 'origin/gh-pages' by 1 commit.
 nothing to commit, working directory clean
 ```
 
-7) Finally "Push" (aka sync/upload) the changes to Github.com@
+9) Finally "Push" (aka sync/upload) the changes to Github.com@
 ```
-git push
+git push origin gh-pages
 ```
 
-8) Browse to "kiosk.mapaction.org/kiosk-nepal/3W" and check that everything has
+10) If this doesn't work for some reason but you are sure that you want to push the local version to Github, you can force it (though be aware this might wipe some changes you haven't fetched if it was a long time since you did the `git pull (--force) origin gh-pages`), just add `--force` after the `push`:
+```
+git push --force origin gh-pages
+```
+
+11) Browse to "kiosk.mapaction.org/kiosk-nepal/3W" and check that everything has
 uploaded properly. It is hasn't contact Andy Smith
 
 -- END --
